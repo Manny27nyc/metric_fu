@@ -18,7 +18,7 @@ module MetricFu
     #   A YAML object containing the results of the result generation
     #   process
     def as_yaml
-      result_hash.to_yaml
+      YAML.to_json(result_hash)
     end
 
     def per_file_data
