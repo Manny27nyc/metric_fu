@@ -39,11 +39,13 @@ RSpec.configure do |config|
 
     if app_warnings.any?
       puts <<-WARNINGS
+
 #{'-' * 30} app warnings: #{'-' * 30}
 
 #{app_warnings.join("\n")}
 
 #{'-' * 75}
+
       WARNINGS
 
       abort "Failing build due to app warnings: #{app_warnings.inspect}"
