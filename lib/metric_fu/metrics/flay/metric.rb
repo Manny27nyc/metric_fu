@@ -22,6 +22,7 @@ module MetricFu
     end
 
     def activate
+      activate_library 'flay'
       super
     end
   end
